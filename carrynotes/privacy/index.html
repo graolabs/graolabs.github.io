@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carry Notes Privacy</title>
+<meta name="description" content="Carry Notes collects nothing. Your notes never leave your device.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f1d1a;
+    --muted: #6b665e;
+    --rule: #e4e0d8;
+    --accent: #3f6b4a;
+    --card: #f3f1ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161513;
+      --text: #ece9e3;
+      --muted: #a39d93;
+      --rule: #34312c;
+      --accent: #8fbf98;
+      --card: #201f1c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161513;
+    --text: #ece9e3;
+    --muted: #a39d93;
+    --rule: #34312c;
+    --accent: #8fbf98;
+    --card: #201f1c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .date { color: var(--muted); margin: 0 0 32px; font-size: 0.95rem; }
+  .summary {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 0 0 40px;
+  }
+  .summary p { margin: 0; }
+  h2 { font-size: 1.2rem; margin: 40px 0 8px; }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 6px 0; }
+  p { margin: 8px 0; }
+  a { color: var(--accent); }
+  code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Carry Notes privacy policy</h1>
+  <p class="date">Effective 12 October 2026</p>
+
+  <div class="summary">
+    <p><strong>Carry Notes collects nothing.</strong> Your notes never leave your device. We can't see them, and no one
+    else can through the app.</p>
+  </div>
+
+  <h2>What the app reads and writes</h2>
+  <ul>
+    <li>It reads only the folders you choose. Your export, such as an Obsidian vault, is only ever read, never changed.</li>
+    <li>It writes only to the destination folder you choose, and to an outside folder if you use the Send to folder step.</li>
+    <li>It keeps its own records, your actions, your runs and the copies Undo needs, in a hidden <code>.carrynotes</code>
+      folder inside the destination. Delete that folder, or the destination, and they are gone.</li>
+    <li>It remembers your recent workspaces, and the folders you gave it access to, in the app's own storage on your
+      device. <em>Remove from List</em> forgets one workspace. Deleting the app removes them all.</li>
+  </ul>
+
+  <h2>What the app doesn't do</h2>
+  <ul>
+    <li>It never goes online. The app has no network access at all.</li>
+    <li>It has no accounts and no sign-in.</li>
+    <li>It has no analytics, no ads, no tracking, and no third-party code.</li>
+    <li>It never reads another app's private data. It only works on exports and folders you pick.</li>
+  </ul>
+
+  <h2>What Apple shares with us</h2>
+  <p>Apple handles how you get Carry Notes, and some information can reach us through Apple:</p>
+  <ul>
+    <li><strong>If you test the beta in TestFlight,</strong> Apple shares the name and email address you were invited
+      with, the feedback and screenshots you choose to send, and crash reports from the beta.</li>
+    <li><strong>If you download Carry Notes from the App Store</strong> and turn on <em>Share with App Developers</em>
+      in your device's settings, Apple shares crash reports and usage statistics with us, without your identity.</li>
+    <li><strong>If you buy Carry Notes,</strong> Apple handles the payment. We never see your payment details.</li>
+  </ul>
+  <p>We use what Apple shares only to fix problems and make Carry Notes better. We never sell it or share it with
+    anyone. What Apple itself collects is covered by
+    <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h2>Children</h2>
+  <p>Carry Notes collects no information from anyone, children included.</p>
+
+  <h2>Your rights</h2>
+  <p>The app holds no personal information about you, so there is nothing in it for us to show you or delete. If you
+    sent us feedback through TestFlight or by email and want it deleted, write to us and we will delete it. This
+    applies wherever you live.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, this page shows the new version and its date. If Carry Notes ever starts collecting
+    anything, the policy changes before that version is released, and the app tells you.</p>
+
+  <h2>Contact</h2>
+  <p>Grão Labs: <a href="mailto:graolabs@gmail.com">graolabs@gmail.com</a></p>
+
+  <footer>Carry Notes is made by Grão Labs.</footer>
+</main>
+</body>
+</html>
